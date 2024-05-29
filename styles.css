@@ -77,3 +77,18 @@ a {
 a:hover {
     color: #002d72;
 }
+
+@keyframes slide-in {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out;
+}
