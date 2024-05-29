@@ -63,10 +63,13 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
-    position: fixed;
+    /* Ne fixez pas le pied de page au bas de la fenêtre */
+    /* position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 0; */
+    margin-top: 2em; /* Ajoutez une marge supérieure pour déplacer le contenu vers le bas */
 }
+
 
 h1, h2, h3 {
     color: #0056b3;
