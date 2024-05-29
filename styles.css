@@ -54,6 +54,8 @@ section {
     padding: 1em;
     margin-bottom: 1em;
     border-left: 5px solid #0056b3;
+    overflow: auto; /* Ajout pour gérer le débordement du contenu */
+    height: auto; /* Ajustement pour permettre à la carte de s'adapter à son contenu */
 }
 
 footer {
