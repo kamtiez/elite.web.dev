@@ -1,99 +1,71 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    /* Light Grey */
+    color: #333333;
+    /* Dark Grey */
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333333;
 }
 
 header {
-    background-color: #0056b3;
-    color: white;
     padding: 2em;
     text-align: center;
+    background-color: #1565C0;
+    /* Dark Blue */
 }
 
-nav {
-    background-color: #002d72;
-    overflow: hidden;
+.bg-dark-blue {
+    background-color: #1565C0;
+    /* Dark Blue */
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.bg-medium-blue {
+    background-color: #1976D2;
+    /* Medium Blue */
 }
 
-nav ul li {
-    float: left;
+.text-dark-blue {
+    color: #1976D2;
+    /* Medium Blue */
 }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #0044cc;
-}
-
-main {
-    padding: 2em;
-    background-color: #f0f8ff;
-}
-
-section {
-    margin-bottom: 2em;
-}
-
-.service {
-    background-color: #e7e7e7;
-    padding: 1em;
-    margin-bottom: 1em;
-    border-left: 5px solid #0056b3;
-    overflow: auto; /* Ajout pour gérer le débordement du contenu */
-    height: auto; /* Ajustement pour permettre à la carte de s'adapter à son contenu */
-}
-
-footer {
-    background-color: #002d72;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    /* Ne fixez pas le pied de page au bas de la fenêtre */
-    /* position: fixed;
-    width: 100%;
-    bottom: 0; */
-    margin-top: 2em; /* Ajoutez une marge supérieure pour déplacer le contenu vers le bas */
-}
-
-
-h1, h2, h3 {
-    color: #0056b3;
-}
-
-a {
-    color: #0044cc;
-}
-
-a:hover {
-    color: #002d72;
+.slide-in {
+    animation: slide-in 1s ease-out;
 }
 
 @keyframes slide-in {
     from {
         transform: translateY(100%);
-        opacity: 0;
+        opacity  : 0;
     }
     to {
         transform: translateY(0);
-        opacity: 1;
+        opacity  : 1;
     }
 }
 
-.slide-in {
-    animation: slide-in 1s ease-out;
+.card-title {
+    color: #1976D2;
+    /* Medium Blue */
+}
+
+.card {
+    border-left: 5px solid #1976D2;
+    /* Medium Blue */
+    transition : transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+a {
+    color: #FFC107;
+    /* Yellow */
+}
+
+a:hover {
+    color: #FFA000;
+    /* Darker Yellow */
 }
